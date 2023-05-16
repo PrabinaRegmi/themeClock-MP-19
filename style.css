@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -62,7 +62,6 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: #f0f0f0;
 }
 
 .needle {
@@ -74,6 +73,7 @@ body {
   background-color: var(--primary-color);
   /* we want to rotate from bottom center */
   transform-origin: bottom center;
+  transition: all 0.3s ease-in;
 }
 
 .needle.hour {
@@ -91,6 +91,7 @@ body {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
+  transition: none;
 }
 
 .center-point {
@@ -132,6 +133,7 @@ body {
 .day .circle {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  font-size: 12px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
